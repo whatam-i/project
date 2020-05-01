@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<title>Login Page</title>
+	<meta name="viewport" content="width=display-width, initial-scale=1">
+	<meta name="author" content="Prashant">
+
+	<!-- bootstrap links -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- font-awesome link -->
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- external css and js link -->
+<link rel="stylesheet" type="text/css" href="LoginPage1.css">
+<link rel="stylesheet" type="text/css" href="RegistrationForm1.css">
+<link rel="icon" href="assets/favicon.ico">
+
+</head>
+<body class="bodyImage">
+
+	<!-- <button class="b1">Show login</button>
+	<button class ="b2">Show Registration</button> -->
+
+	<!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+	<section id="login11">
+			<div class="container">
+				<div class="col-sm-6 offset-sm-3 loginForm">
+					<div class="mt-4 registerText text-center fontstyle">
+						Login Here
+					</div>
+					<div class="container mt-4">
+						<form onsubmit="#" class="container col-sm-11">
+							<div class="form-group input-icons">
+								<i class="fa fa-user icon"> </i>
+								<input type="email" name="email" class="form-control input-field" placeholder="Your E-mail ID" required>
+							</div>
+							<div class="form-group input-icons">
+								<i class="fa fa-key icon"></i>
+								<input type="password" name="phoneNo" class="form-control input-field" placeholder="Password" required>
+							</div>
+							<div class="form-group pt-3">
+								<input type="submit" name="Register" value="Login" class="btn btn-block registerButton">
+							</div>
+						</form>
+
+						<div class="container text-center pt-4 mb-4 fontstyle">
+							Don't have any account? <span class="b2 anchor">Register Here</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<!--  -->
+
+
+		<div id="login12" style="display: none;">
+<!-- this div is for the background image -->
+	<div>
+		<!-- this section contains the registration form -->
+		<section>
+			<div class="container">
+				<div class="col-sm-6 offset-sm-3 registrationForm">
+					<div class="mt-4 registerText text-center fontstyle">
+						Registration Form
+					</div>
+					<div class="container mt-4">
+						<form onsubmit="#" class="container col-sm-11">
+							<div class="form-group">
+								<input type="text" name="fullName" class="form-control" placeholder="Your Full Name">
+							</div>
+							<div class="form-group">
+								<input type="email" name="email" class="form-control" placeholder="Your E-mail ID" required>
+							</div>
+							<div class="form-group">
+								<input type="number" name="phoneNo" class="form-control" placeholder="Your Phone Number" required>
+							</div>
+
+							<div class="form-group">
+								<input type="password" name="phoneNo" class="form-control" placeholder="Create Password" required>
+							</div>
+							<div class="form-group">
+								<input type="password" name="phoneNo" class="form-control" placeholder="Re-write Password" required>
+							</div>
+
+							<div class="form-group">
+								<input type="checkbox" name="accept" class="checkB" required><span class="container fontstyle">I agree all statements in <a onclick="alert('open the terms and conditions')">Terms and Conditions</a></span>
+							</div>
+
+							<div class="form-group pt-3">
+								<input type="submit" name="Register" value="Register" class="btn btn-block registerButton">
+							</div>
+						</form>
+
+						<div class="container text-center pt-4 mb-4 fontstyle">
+							Already have an account? <span class="b1 anchor">Login Here</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+
+<script>
+	$(document).ready(function(){
+		$(".b1").click(function(){
+			$("#login11").show(500);
+			$("#login12").hide(500);
+		});
+
+		$(".b2").click(function(){
+			$("#login12").show(500);
+			$("#login11").hide(500);
+		});
+	});
+</script>
+</body>
+</html>

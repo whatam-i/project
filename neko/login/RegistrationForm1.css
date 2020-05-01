@@ -1,0 +1,37 @@
+.bodyImage{
+	/*background: url("../Images/register.jpg") no-repeat center fixed;*/
+	background-image:linear-gradient(to right,rgba(143, 22, 218, 0.44), rgba(24, 231, 196, 0.54)),url('Images/register.jpg');
+	height: 750px;
+	background-size: cover;
+}
+
+.registerText{
+	font-size: 30px;
+}
+
+.fontstyle{
+	font-family: web-safe;
+}
+
+.registrationForm{
+	border:1px solid green;
+	border-radius: 7px;
+	background: RGBA(255, 255, 255, 0.6) no-repeat center fixed;
+	position: relative;
+	top: 100px;
+}
+
+.registerButton{
+	/*background: linear-gradient(90deg,silver,lightgray,silver);*/
+	background: linear-gradient(to right,rgba(143, 22, 218, 0.44), rgba(24, 231, 196, 0.54));
+}
+
+.checkB{
+	position:relative;
+	top: 1px;
+}
+
+.anchor{
+	color: red;
+	cursor: pointer;
+}

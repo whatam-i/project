@@ -1,0 +1,57 @@
+.bodyImage{
+	/*background: url("../Images/register.jpg") no-repeat center fixed;*/
+	background-image:linear-gradient(to right,rgba(37, 233, 210,0.23), rgba(102, 37, 233, 0.18)),url('Images/register.jpg');
+	height: 750px;
+	background-size: cover;
+}
+
+.registerText{
+	font-size: 30px;
+}
+
+.fontstyle{
+	font-family: web-safe;
+}
+
+.loginForm{
+	border:1px solid green;
+	border-radius: 7px;
+	background: RGBA(255, 255, 255, 0.6) no-repeat center fixed;
+	position: relative;
+	top: 180px;
+
+}
+
+.registerButton{
+	/*background: linear-gradient(90deg,silver,lightgray,silver);*/
+	background: linear-gradient(to right,rgba(37, 233, 210,0.48), rgba(102, 37, 233, 0.58));
+}
+
+.checkB{
+	position:relative;
+	top: 1px;
+}
+
+
+/*icon*/
+.input-icons i {
+    position: absolute;
+}
+
+.input-icons{
+  	width: 100%;
+  	margin-bottom: 10px;
+ }
+
+.icon {
+    padding: 10px;
+    color: blue;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
